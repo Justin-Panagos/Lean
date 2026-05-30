@@ -1,21 +1,21 @@
-# Slate
+# Lean
 
 A lean, token-efficient workflow skill stack for Claude Code.
 Built for solo builders and small teams who want structure without the overhead.
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/<your-username>/slate/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Justin-Panagos/lean/main/install.sh | bash
 ```
 
 Then run `/ln-setup` to configure.
 
 ---
 
-## Why Slate
+## Why Lean
 
-Most AI coding workflows either do too much or nothing at all. GSD has 67 commands and 33 agents. Superpowers preloads 22k tokens before you've typed a word. Slate does the same job with 17 focused skills and under 1,000 tokens at startup.
+Most AI coding workflows either do too much or nothing at all. GSD has 67 commands and 33 agents. Superpowers preloads 22k tokens before you've typed a word. Lean does the same job with 17 focused skills and under 1,000 tokens at startup.
 
-| | Superpowers | GSD Redux | Slate |
+| | Superpowers | GSD Redux | Lean |
 |---|---|---|---|
 | Skills / commands | 13 | 67 | 17 |
 | Startup tokens | ~3-5k | ~5-8k | ~1,000 |
@@ -31,7 +31,7 @@ Most AI coding workflows either do too much or nothing at all. GSD has 67 comman
 
 ## How It Works
 
-Slate is built around one core idea: **load context late, load it narrow.**
+Lean is built around one core idea: **load context late, load it narrow.**
 
 Skills only load when triggered. Subagents run in isolated context. Your main window stays clean.
 
@@ -95,7 +95,7 @@ Three hooks install automatically and run in the background.
 
 ## Model Profiles
 
-Slate routes different models to different skill types to keep costs down.
+Lean routes different models to different skill types to keep costs down.
 
 | Profile | Interactive skills | Subagent skills | Use when |
 |---------|-------------------|-----------------|----------|
@@ -113,18 +113,18 @@ During `/ln-setup` you'll be asked one question:
 
 > "Are you a developer comfortable managing Git yourself?"
 
-**No** - Slate includes `/ln-save-work`. Type it when you want to save your work. Slate handles the rest.
+**No** - Lean includes `/ln-save-work`. Type it when you want to save your work. Lean handles the rest.
 
-**Yes** - Git is yours. Slate stays out of it.
+**Yes** - Git is yours. Lean stays out of it.
 
 ---
 
 ## Multi-Session Handoffs
 
-Slate tracks session state across context resets.
+Lean tracks session state across context resets.
 
 - `/ln-handoff` saves current state to `docs/handoffs/YYYY-MM-DD-HH-MM-<topic>-handoff.md`
-- On next session start, Slate lists available handoffs and asks which to resume
+- On next session start, Lean lists available handoffs and asks which to resume
 - Loading a handoff prints a summary: what's done, what's not, where to pick up
 - `/ln-handoff --overwrite` replaces an existing handoff for the same topic
 
@@ -132,7 +132,7 @@ Slate tracks session state across context resets.
 
 ## Adding Your Own Skills
 
-Slate is a base stack, not a closed system. Use `/ln-create-skill` to build project-specific skills on top without touching the core.
+Lean is a base stack, not a closed system. Use `/ln-create-skill` to build project-specific skills on top without touching the core.
 
 Custom skills go in `.claude/skills/<name>/SKILL.md` and follow the same format.
 
@@ -141,7 +141,7 @@ Custom skills go in `.claude/skills/<name>/SKILL.md` and follow the same format.
 ## Install
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/<your-username>/slate/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Justin-Panagos/lean/main/install.sh | bash
 ```
 
 Requires Claude Code. Install it first if needed:
