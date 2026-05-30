@@ -4,7 +4,7 @@ A lean, token-efficient workflow skill stack for Claude Code.
 Built for solo builders and small teams who want structure without the overhead.
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Justin-Panagos/lean/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Justin-Panagos/Lean/main/install.sh | bash
 ```
 
 Then run `/ln-setup` to configure.
@@ -25,7 +25,7 @@ Most AI coding workflows either do too much or nothing at all. GSD has 67 comman
 | Pre-compact backup hook | ❌ | ❌ | ✅ |
 | Free / structured mode | ❌ | ❌ | ✅ |
 | Vibecoder Git support | ❌ | ❌ | ✅ |
-| Trust / stability | ✅ stable | ⚠️ rug-pull history | ✅ you own it |
+
 
 ---
 
