@@ -1,0 +1,25 @@
+{
+  "hooks": [
+    {
+      "event": "SessionStart",
+      "handler": {
+        "type": "command",
+        "command": "node .claude/hooks/session-start.mjs"
+      }
+    },
+    {
+      "event": "Stop",
+      "handler": {
+        "type": "command",
+        "command": "node .claude/hooks/context-monitor.mjs"
+      }
+    },
+    {
+      "event": "PreCompact",
+      "handler": {
+        "type": "command",
+        "command": "node .claude/hooks/pre-compact.mjs"
+      }
+    }
+  ]
+}
