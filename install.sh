@@ -4,7 +4,7 @@
 
 set -e
 
-REPO="https://raw.githubusercontent.com/<your-username>/lean/main"
+REPO="https://raw.githubusercontent.com/Justin-Panagos/Lean/main"
 SKILLS_DIR=".claude/skills"
 HOOKS_DIR=".claude/hooks"
 
