@@ -1,7 +1,9 @@
 # Lean
 
-A lean, token-efficient workflow skill stack for Claude Code.
-Built for solo builders and small teams who want structure without the overhead.
+Claude Code burns through your context window fast. Lean fixes that.
+
+It's a lightweight command and workflow plugin for Claude Code that keeps startup tokens under 1,000, auto-saves your session before context resets, and routes your work through the right workflow automatically — so you spend less time managing the AI and more time building.
+Built for solo devs and small teams who want structure without the bloat.
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/Justin-Panagos/Lean/main/install.sh | bash
